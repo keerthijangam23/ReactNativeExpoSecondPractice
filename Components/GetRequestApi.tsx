@@ -25,6 +25,12 @@ export default function GetRequestApi() {
             </View>
           );
         }}
+        ItemSeparatorComponent={() => {
+          return <View style={{ height: 16 }} />;
+        }}
+        ListEmptyComponent={<Text>No Posts Found</Text>}
+        ListFooterComponent={<Text style={styles.footerText}>End of List</Text>}
+        ListHeaderComponent={<Text style={styles.headerText}>Post List</Text>}
       />
     </View>
   );
@@ -47,4 +53,14 @@ const styles = StyleSheet.create({
     fontSize: 24,
     color: "brown",
   },
+  headerText:{
+    fontSize:24,
+    textAlign:"center",
+    marginBottom:12
+  },
+  footerText:{
+    fontSize:24,
+    textAlign:"center",
+    marginBottom:12
+  }
 });
