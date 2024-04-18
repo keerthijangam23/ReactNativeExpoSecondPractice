@@ -1,11 +1,4 @@
-import {
-  View,
-  Text,
-  SafeAreaView,
-  StyleSheet,
-  StatusBar,
-  FlatList,
-} from "react-native";
+import { View, Text, StyleSheet, FlatList } from "react-native";
 import { useEffect, useState } from "react";
 
 export default function GetRequestApi() {
@@ -21,29 +14,22 @@ export default function GetRequestApi() {
     fetchData();
   }, []);
   return (
-    <SafeAreaView style={StyleSheet.container}>
-      <View style={styles.listContainer}>
-        <FlatList
-          data={postList}
-          renderItem={({ item }) => {
-            return (
-              <View style={styles.card}>
-                <Text style={styles.titleText}>{item.title}</Text>
-                <Text style={styles.bodyText}>{item.body}</Text>
-              </View>
-            );
-          }}
-        />
-      </View>
-    </SafeAreaView>
+    <View style={styles.listContainer}>
+      <FlatList
+        data={postList}
+        renderItem={({ item }: any) => {
+          return (
+            <View style={styles.card}>
+              <Text style={styles.titleText}>{item.title}</Text>
+              <Text style={styles.bodyText}>{item.body}</Text>
+            </View>
+          );
+        }}
+      />
+    </View>
   );
 }
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#f5f5f5",
-    paddingTop: StatusBar.currentHeight,
-  },
   listContainer: {
     flex: 1,
     paddingTop: 16,
