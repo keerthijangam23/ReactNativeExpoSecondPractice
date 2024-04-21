@@ -3,6 +3,7 @@ import GetRequestApi from "./Components/GetRequestApi";
 import UseColorSchemeTest from "./Components/UseColorSchemeTest"
 import UseWindowDimensionsHook from "./Components/UseWindowDimensionsHook";
 import NativeStackNavigation from "./Components/NativeStackNavigation";
+import DrawerNavigation from "./Components/DrawerNavigation";
 
 export default function App() {
   return (
@@ -10,7 +11,8 @@ export default function App() {
       {/* <GetRequestApi /> */}
       {/* <UseColorSchemeTest/> */}
       {/* <UseWindowDimensionsHook/> */}
-      <NativeStackNavigation/>
+      {/* <NativeStackNavigation/> */}
+      <DrawerNavigation/>
     </SafeAreaView>
   );
 }
