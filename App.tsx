@@ -4,6 +4,7 @@ import UseColorSchemeTest from "./Components/UseColorSchemeTest"
 import UseWindowDimensionsHook from "./Components/UseWindowDimensionsHook";
 import NativeStackNavigation from "./Components/NativeStackNavigation";
 import DrawerNavigation from "./Components/DrawerNavigation";
+import TabNavigation from "./Components/TabNavigation";
 
 export default function App() {
   return (
@@ -12,7 +13,8 @@ export default function App() {
       {/* <UseColorSchemeTest/> */}
       {/* <UseWindowDimensionsHook/> */}
       {/* <NativeStackNavigation/> */}
-      <DrawerNavigation/>
+      {/* <DrawerNavigation/> */}
+      {/* <TabNavigation/> */}
     </SafeAreaView>
   );
 }
