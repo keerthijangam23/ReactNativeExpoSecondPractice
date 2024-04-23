@@ -13,7 +13,7 @@ export default function App() {
       {/* <UseColorSchemeTest/> */}
       {/* <UseWindowDimensionsHook/> */}
       {/* <NativeStackNavigation/> */}
-      {/* <DrawerNavigation/> */}
+      <DrawerNavigation/>
       {/* <TabNavigation/> */}
     </SafeAreaView>
   );
